@@ -23,7 +23,7 @@ transformers==4.12.3
 The default hyperparameters for the algorithm can be found in ''param.py''.
 You can modify the robot num in file ''train.py'' and 'train_joint.py'
 
-# Pre-train Predictor
+### Pre-train Predictor
 If you want to pre-train the VLNBERT-based predictor model, use the command:
 ```shell
 mkdir -p snap/VLN-BERT
@@ -35,7 +35,7 @@ If you want to pre-train the DUET-based predictor model, use the command:
 mkdir -p snap/DUET
 python train.py --model DUET --optim AdamW
 ```
-# Joint Training
+### Joint Training
 If you want to train the VLNBERT-based predictor model and controller model, use the command:
 ```shell
 mkdir -p snap/VLN-BERT
